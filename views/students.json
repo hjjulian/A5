@@ -1,0 +1,43 @@
+function initialize() {
+    return new Promise((resolve, reject) => {
+        if (!fs.existsSync(studentsPath)) {
+            fs.copyFile(path.join(__dirname, '../data', 'students.json'), studentsPath, (err) => {
+                if (err) return reject("Error copying students.json file");
+                readDataFiles();
+            });
+        } else {
+            readDataFiles();
+        }
+
+        function readDataFiles() {
+            fs.readFile(studentsPath, 'utf8', (err, studentDataFromFile) => {
+                if (err) {
+                    return reject("unable to read students.json");
+                }
+
+                let students;
+                try {
+                    students = JSON.parse(studentDataFromFile);
+                } catch (parseErr) {
+                    return reject("unable to parse students.json");
+                }
+
+                fs.readFile(coursesPath, 'utf8', (err, courseDataFromFile) => {
+                    if (err) {
+                        return reject("unable to read courses.json");
+                    }
+
+                    let courses;
+                    try {
+                        courses = JSON.parse(courseDataFromFile);
+                    } catch (parseErr) {
+                        return reject("unable to parse courses.json");
+                    }
+
+                    dataCollection = new Data(students, courses);
+                    resolve();
+                });
+            });
+        }
+    });
+}
