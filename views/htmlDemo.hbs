@@ -1,0 +1,170 @@
+
+
+    <header class="header-section">
+        <h1>HTML Demo Site</h1>
+        <p>This page is for demo purposes of tables, list, images, audio , and video. </p>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <main class="col-md-12">
+                <!-- Tables Section -->
+                <section>
+                    <div class="content-section">
+                    <h2>Table - Computer Specifications</h2>
+                    <table class="table">
+                        <caption>Computer Specifications 1</caption>
+                        <thead>
+                            <tr>
+                                <th>Component</th>
+                                <th>Specification</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CPU</td>
+                                <td rowspan="2">Intel Core i7</td>
+                                <td>4.2 GHz</td>
+                            </tr>
+                            <tr>
+                                <td>RAM</td>
+                                <td>16 GB</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Storage</td>
+                                <td>512 GB SSD</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Graphics</td>
+                                <td>NVIDIA GTX 1660</td>
+                                <td>6 GB</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    
+
+                    <table class="table">
+                        <caption>Computer Specifications 2</caption>
+                        <thead>
+                            <tr>
+                                <th>Component</th>
+                                <th>Specification</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CPU</td>
+                                <td rowspan="2">AMD Ryzen 5</td>
+                                <td>3.6 GHz</td>
+                            </tr>
+                            <tr>
+                                <td>RAM</td>
+                                <td>8 GB</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Storage</td>
+                                <td>1 TB HDD</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Graphics</td>
+                                <td>AMD Radeon RX 580</td>
+                                <td>8 GB</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <p>This section provides a comparison of computer specifications for two different systems.</p>
+                    </div>
+                </section>
+                
+
+                <!-- Lists Section -->
+                <section>
+                    <div class="content-section">
+                    <h2>Lists - Computer History</h2>
+                    <ol>
+                        <li>First Generation (1940-1956)
+                            <ul>
+                                <li>Vacuum Tubes</li>
+                                <li><a href="https://en.wikipedia.org/wiki/ENIAC">ENIAC</a></li>
+                                <li>EDVAC</li>
+                            </ul>
+                        </li>
+                        <li>Second Generation (1956-1963)
+                            <ul>
+                                <li>Transistors</li>
+                                <li><a href="https://en.wikipedia.org/wiki/IBM_1401">IBM 1401</a></li>
+                                <li>IBM 7094</li>
+                            </ul>
+                        </li>
+                        <li>Third Generation (1964-1971)
+                            <ul>
+                                <li>Integrated Circuits</li>
+                                <li><a href="https://en.wikipedia.org/wiki/IBM_System/360">IBM System/360</a></li>
+                                <li>IBM 1900 Sries</li>
+                            </ul>
+                        </li>
+                        <li>Fourth Generation (1971-Present)
+                            <ul>
+                                <li>Microprocessors</li>
+                                <li><a href="https://en.wikipedia.org/wiki/Intel_4004">Intel 4004</a></li>
+                                <li>Pentium Series</li>
+                            </ul>
+                        </li>
+                        <li>Fifth Generation (Present and Beyond)
+                            <ul>
+                                <li>Artificial Intelligence</li>
+                                <li><a href="https://en.wikipedia.org/wiki/AI_chip">AI Chips</a></li>
+                                <li>Robotics</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p>This section provides a brief overview of the history of computers, highlighting significant milestones in each generation.</p>
+                </section>
+
+                <!-- Images Section -->
+                <section>
+                    <div class="content-section">
+                    <h2>Images - Random</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Snowboarder_in_halfpipe.jpg" alt="Snowboarder in halfpipe" width="300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png" alt="PNG Transparency" width="300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/2023_08_Petrusstr_11_2.jpg" alt="Half-timbered House" width="300">
+                    <p>This section contains three images with alt text.</p>
+                    </div>
+                </section>
+
+                <!-- Audio Section -->
+                <section>
+                    <div class="content-section">
+                    <h2>Audio</h2>
+                    <audio controls>
+                        <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.mp3" type="audio/mpeg">
+                        <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.ogg" type="audio/ogg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>This section features an HTML5 audio player with multiple source formats.</p>
+                    </div>
+                </section>
+
+                <!-- Video Section -->
+                <section>
+                    <div class="content-section">
+                    <h2>Video</h2>
+                    <video controls>
+                        <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.mp4" type="video/mp4">
+                        <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.ogg" type="video/ogg">
+                        <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.webm" type="video/webm">
+                        Your browser does not support the video element.
+                    </video>
+                    <p>This section includes an HTML5 video player with multiple source formats.</p>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
