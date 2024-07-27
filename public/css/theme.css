@@ -170,5 +170,5 @@ legend {
 
 /* Optional: Add padding to the bottom of your body content if the footer overlaps content */
 body {
-    padding-bottom: 50px; /* Adjust based on footer height */
+    padding-bottom: 100px; /* Adjust based on footer height */
 }
