@@ -115,11 +115,13 @@ app.get("/students/add", (req, res) => {
 
 // POST /students/add
 app.post("/students/add", (req, res) => {
+    console.log('Request body:', req.body);
     collegeData.addStudent(req.body)
         .then(() => {
             res.redirect("/students");
         })
         .catch(err => {
+            console.error('Error adding student:', err); // Log errors
             res.status(500).send("Unable to add student");
         });
 });
@@ -148,11 +150,13 @@ app.get("/student/:studentNum", (req, res) => {
 
 // POST /student/update
 app.post("/student/update", (req, res) => {
+    console.log('Request body:', req.body);
     collegeData.updateStudent(req.body)
         .then(() => {
             res.redirect("/students");
         })
         .catch(err => {
+            console.error('Error updating student:', err); // Log errors
             res.status(500).send("Unable to update student");
         });
 });
