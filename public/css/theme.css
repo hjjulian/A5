@@ -9,7 +9,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(#c5f6af, #f6fff7); 
+    background: linear-gradient(#e8ffde, #a0ffab); 
     overflow: auto;
 }
 
@@ -25,7 +25,8 @@ body {
     color: #ffffff;
     padding: 20px;
     margin: 20px auto;
-    max-width: 1100px;
+    width: 1100px;
+    align-self: center;
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -36,45 +37,44 @@ body {
     background: #ffffff;
     padding: 20px;
     margin: 20px auto;
-    max-width: 1100px;
+    max-width: 1200px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
-.footer {
-    background: linear-gradient(to right, #06631a, #a8f99c); /* Gradient */
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+
 
 /* Navbar */
 .navbar {
-    background: linear-gradient(#85de84, hsl(0, 0%, 100%));
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    background: linear-gradient(#65c155, #e3ffde); 
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 10px 20px; /* Adjust padding to create space inside the navbar */
 }
+
+/* Additional spacing around the navbar elements */
+.navbar-brand,
+.nav-link {
+    margin-right: 20px;
+    color: #1d5c24;
+}
+
+
 
 .smooch-regular {
     font-family: "Smooch", cursive;
     font-weight: 400;
     font-style: normal;
-    color: #195b15;
   }
 
   
 /* Navbar Brand */
 .navbar-brand {
-    padding: 7px;
     font-family: 'Smooch', cursive; /* Cursive font */
-    color: #ffffff; /* New text color */
     font-weight: 500;
-    font-size: 24px;
+    font-size: 30px;
     font-style: normal;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Text shadow */
     margin-left: 40px;
@@ -83,8 +83,7 @@ body {
 /* Navbar Links */
 .nav-link {
     font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-style: bold; /* Cool font */
+    font-weight: 600;
     font-size: 18px;
 }
 
@@ -134,7 +133,7 @@ a {
 }
 
 a:hover {
-    color: hsl(120, 43%, 66%); /* Change text color on hover */
+    color: hsl(120, 80%, 16%); /* Change text color on hover */
 }
 
 /* Fieldset Legends */
@@ -154,26 +153,30 @@ legend {
 }
 
 .btn-primary:hover {
-    background: linear-gradient(to right, #65a253, #c6ffd5); 
+    background: (to right, #10317d, #c6f0ff); 
 }
 
-/* Video Container */
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background: #000;
-    margin-bottom: 20px;
-}
-
-.video-container iframe,
-.video-container object,
-.video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
+/* Footer */
+.footer {
+    background: linear-gradient(to right, #06631a, #a8f99c); /* Gradient background */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; /* Fixed position at the bottom of the page */
+    bottom: 0;
     width: 100%;
-    height: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Optional: Add padding to the bottom of your body content if the footer overlaps content */
+body {
+    padding-bottom: 100px; /* Adjust based on footer height */
+}
+
+
+.btn-secondary {
+    background:#c61802; 
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    color: #ffffff; /* Text color */
 }
